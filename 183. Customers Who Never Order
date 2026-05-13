@@ -1,0 +1,6 @@
+# Write your MySQL query statement below
+# tìm khách hàng chưa đặt hàng
+SELECT Customers.name AS Customers
+FROM Customers LEFT JOIN Orders           
+ON Customers.id = Orders.customerId   #khách hàng có đơn thì nối 
+WHERE Orders.customerId IS NULL; # null ko có đơn hangf
