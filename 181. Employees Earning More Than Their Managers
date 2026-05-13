@@ -1,0 +1,5 @@
+# so sánh lương nhân viên và quản lý
+SELECT e.name AS Employee
+FROM Employee e JOIN Employee manager
+ON e.managerId = manager.id   #nối bảng
+WHERE e.salary > manager.salary;  
